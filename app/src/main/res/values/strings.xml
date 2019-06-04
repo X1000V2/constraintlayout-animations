@@ -1,5 +1,10 @@
 <resources>
     <string name="app_name">ConstraintLayout Animation Test</string>
+
+    <!--Main Screen-->
+    <string name="main_test_1_simple_screen">Test 1 Simple Screen</string>
+
+    <!--Test 1 Simple Screem-->
     <string name="show_info">Show Info</string>
     <string name="playstation_4">Playstation 4</string>
     <string name="playstation_4_info">PlayStation 4 (プレイステーション4 Pureisutēshon Fō?, oficialmente abreviada como PS4) es la cuarta videoconsola del modelo PlayStation.8​ Forma parte de las videoconsolas de octava generación. Fue anunciada oficialmente el 20 de febrero de 2013 en el evento PlayStation Meeting 2013,9​ aunque el diseño de la consola no fue presentado hasta el 10 de junio en el E3 2013.10​ Es la sucesora de la PlayStation 3 y compite con Wii U y Switch de Nintendo y Xbox One de Microsoft. Su lanzamiento fue el 15 de noviembre de 2013 en Estados Unidos y en Europa y Sudamérica fue el 29 de noviembre de 2013,11​9​ mientras que en Japón fue el 22 de febrero de 2014.2​

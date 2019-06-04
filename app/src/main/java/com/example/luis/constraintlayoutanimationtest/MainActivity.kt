@@ -1,14 +1,13 @@
 package com.example.luis.constraintlayoutanimationtest
 
-import android.os.Build
+import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.support.constraint.ConstraintLayout
 import android.support.constraint.ConstraintSet
 import android.transition.TransitionManager
-import android.widget.Button
-import com.example.luis.constraintlayoutanimationtest.R.id.button
-import kotlinx.android.synthetic.main.activity_main.*
+import com.example.luis.constraintlayoutanimationtest.test1SimpleScreen.Test1SimpleScreen
+import kotlinx.android.synthetic.main.main_activity.*
 
 class MainActivity : AppCompatActivity() {
 
@@ -16,33 +15,11 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.main_activity)
 
-        button?.setOnClickListener {
-            infoIsVisible = !infoIsVisible
-            showInfo(infoIsVisible)
+        button_test_1.setOnClickListener {
+            startActivity(Intent(this, Test1SimpleScreen::class.java))
         }
-    }
 
-    private fun showInfo(show: Boolean) {
-
-        val constraintLayoutRoot = findViewById<ConstraintLayout>(R.id.root)
-
-        val constraint1 = ConstraintSet()
-        if(show){
-            constraint1.clone(constraintLayoutRoot)
-            val constraint2 = ConstraintSet()
-            constraint2.clone(this, R.layout.activity_main_expanded)
-            TransitionManager.beginDelayedTransition(constraintLayoutRoot)
-            val constraint = constraint2
-            constraint.applyTo(constraintLayoutRoot)
-        }else{
-            constraint1.clone(constraintLayoutRoot)
-            val constraint2 = ConstraintSet()
-            constraint2.clone(this, R.layout.activity_main)
-            TransitionManager.beginDelayedTransition(constraintLayoutRoot)
-            val constraint = constraint2
-            constraint.applyTo(constraintLayoutRoot)
-        }
     }
 }
