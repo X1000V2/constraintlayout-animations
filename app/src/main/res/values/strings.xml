@@ -3,6 +3,7 @@
 
     <!--Main Screen-->
     <string name="main_test_1_simple_screen">Test 1 Simple Screen</string>
+    <string name="main_test_2_recycler_screen">Test 2 Recycler Screen</string>
 
     <!--Test 1 Simple Screem-->
     <string name="show_info">Show Info</string>

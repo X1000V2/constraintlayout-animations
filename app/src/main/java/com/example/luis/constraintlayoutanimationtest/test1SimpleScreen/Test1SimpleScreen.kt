@@ -4,7 +4,9 @@ import android.os.Bundle
 import android.support.constraint.ConstraintLayout
 import android.support.constraint.ConstraintSet
 import android.support.v7.app.AppCompatActivity
+import android.transition.ChangeBounds
 import android.transition.TransitionManager
+import android.view.animation.AnticipateOvershootInterpolator
 import com.example.luis.constraintlayoutanimationtest.R
 import kotlinx.android.synthetic.main.test_1_simple_screen.*
 
@@ -32,7 +34,10 @@ class Test1SimpleScreen : AppCompatActivity() {
             constraint1.clone(constraintLayoutRoot)
             val constraint2 = ConstraintSet()
             constraint2.clone(this, R.layout.test_1_simple_screen_expanded)
-            TransitionManager.beginDelayedTransition(constraintLayoutRoot)
+            val transition = ChangeBounds()
+            transition.interpolator = AnticipateOvershootInterpolator(1.0f)
+            transition.duration = 2000
+            TransitionManager.beginDelayedTransition(constraintLayoutRoot,transition)
             val constraint = constraint2
             constraint.applyTo(constraintLayoutRoot)
         } else {

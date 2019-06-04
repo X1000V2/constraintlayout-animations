@@ -18,6 +18,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".test1SimpleScreen.Test1SimpleScreen"/>
+        <activity android:name=".test2RecyclerviewScreen.Test2RecyclerViewActivity"/>
     </application>
 
 </manifest>
