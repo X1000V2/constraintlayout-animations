@@ -27,8 +27,6 @@ class MainActivity : AppCompatActivity() {
     private fun showInfo(show: Boolean) {
 
         val constraintLayoutRoot = findViewById<ConstraintLayout>(R.id.root)
-        val constraintLayoutRootExpanded = findViewById<ConstraintLayout>(R.id.root)
-
 
         val constraint1 = ConstraintSet()
         if(show){
@@ -39,20 +37,12 @@ class MainActivity : AppCompatActivity() {
             val constraint = constraint2
             constraint.applyTo(constraintLayoutRoot)
         }else{
-            constraint1.clone(constraintLayoutRootExpanded)
+            constraint1.clone(constraintLayoutRoot)
             val constraint2 = ConstraintSet()
             constraint2.clone(this, R.layout.activity_main)
-            TransitionManager.beginDelayedTransition(constraintLayoutRootExpanded)
+            TransitionManager.beginDelayedTransition(constraintLayoutRoot)
             val constraint = constraint2
-            constraint.applyTo(constraintLayoutRootExpanded)
+            constraint.applyTo(constraintLayoutRoot)
         }
-
-
-
-
-
-
-
-
     }
 }
