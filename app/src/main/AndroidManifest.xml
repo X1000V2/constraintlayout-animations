@@ -17,8 +17,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".test1SimpleScreen.Test1SimpleScreen"/>
-        <activity android:name=".test2RecyclerviewScreen.Test2RecyclerViewActivity"/>
+        <activity android:name=".test1SimpleScreen.Test1SimpleScreen" />
+        <activity android:name=".test2RecyclerviewScreen.Test2RecyclerViewActivity" />
+        <activity android:name=".test3MotionLayout.Test3MotionLayout" />
+        <activity android:name=".test4ObjectAnimator.Test4ObjectAnimatorActivity" />
     </application>
 
 </manifest>

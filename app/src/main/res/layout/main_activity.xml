@@ -38,4 +38,35 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button_test_1" />
 
+    <Button
+        android:id="@+id/button_test_3"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="#2e64ba"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:layout_margin="10dp"
+        android:text="@string/main_test_3_motion_layout"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_test_2" />
+    <Button
+        android:id="@+id/button_test_4"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="#2e64ba"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:layout_margin="10dp"
+        android:text="@string/main_test_4_object_animator"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_test_3" />
+
 </android.support.constraint.ConstraintLayout>
